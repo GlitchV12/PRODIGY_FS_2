@@ -6,57 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <style>
+        *{
+            transition: ease-in-out 0.3s;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            /* background-color: #f0f2f5; */
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
         }
 
         .signup-container {
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 350px;
             text-align: center;
         }
 
         .signup-container h2 {
             margin-bottom: 20px;
             color: #333333;
+            font-weight: bold;
         }
 
         .signup-container label {
             display: block;
             margin: 10px 0 5px;
             color: #666666;
+            font-weight: bold;
         }
 
         .signup-container input {
             width: 100%;
             padding: 10px;
             margin: 5px 0 10px;
-            border: 1px solid #dddddd;
+            border: 1px solid #ced4da;
             border-radius: 5px;
             box-sizing: border-box;
+            font-size: 14px;
         }
 
         .signup-container button {
             width: 100%;
             padding: 10px;
-            background-color: #1c8aff;
+            background-color: #4054B2;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
         }
 
         .signup-container button:hover {
-            background-color: #007Aff;
+            background-color: #ffffff;
+            color: #4054B2;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.137);
+            border: 2px solid #4054B2;
+        }
+
+        .signup-container p {
+            margin: 20px 0 0;
+            color: #666666;
+        }
+
+        .signup-container a {
+            color: #4054B2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-container a:hover {
+            color: white;
+            /* text-decoration: underline; */
+            border: 2px solid #4054B2;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #4054B2;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px #0000001e;
         }
 
         .message {
@@ -82,13 +115,12 @@
             <label for="name">Username</label>
             <input type="text" id="name" name="name" required>
             <br>
-            <label for="password">Password:</label>
+            <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
             <br>
             <button type="submit">Sign Up</button>
             <p>or</p>
-            <a href="/" style="text-decoration: none;">Login</a>
-            
+            <a href="/">Login</a>
         </form>
     </div>
 </body>
