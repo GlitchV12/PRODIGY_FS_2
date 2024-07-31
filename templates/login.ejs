@@ -6,56 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
+        *{
+            transition: ease-in-out 0.3s;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
         }
 
         .login-container {
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 350px;
             text-align: center;
         }
 
         .login-container h2 {
             margin-bottom: 20px;
             color: #333333;
+            font-weight: bold;
         }
 
         .login-container label {
             display: block;
             margin: 10px 0 5px;
             color: #666666;
+            font-weight: bold;
         }
 
         .login-container input {
             width: 100%;
             padding: 10px;
             margin: 5px 0 10px;
-            border: 1px solid #dddddd;
+            border: 1px solid #ced4da;
             border-radius: 5px;
             box-sizing: border-box;
+            font-size: 14px;
         }
 
         .login-container button {
             width: 100%;
             padding: 10px;
-            background-color: #000000;
+            background-color: #4054B2;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
         }
 
         .login-container button:hover {
-            background-color: #007Aff;
+            background-color: #ffffff;
+            color: #4054B2;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.137);
+            border: 2px solid #4054B2;
+        }
+
+        .login-container p {
+            margin: 20px 0 0;
+            color: #666666;
+        }
+
+        .login-container a {
+            color: #4054B2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-container a:hover {
+            color: white;
+            /* text-decoration: underline; */
+            border: 2px solid #4054B2;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #4054B2;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px #0000001e;
         }
 
         .error {
@@ -63,7 +97,6 @@
             margin-top: 10px;
         }
     </style>
-
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -87,8 +120,7 @@
             <br>
             <button type="submit">Login</button>
             <p>or</p>
-            <a href="/signup" style="text-decoration: none;">Signup</a>
-
+            <a href="/signup">Signup</a>
         </form>
     </div>
 </body>
